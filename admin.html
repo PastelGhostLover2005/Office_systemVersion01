@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel - Office Supplies Inventory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Office Supplies - Admin Panel</h1>
+
+  <h2>Add Supply Item</h2>
+  <form id="addSupplyForm">
+    <input type="text" id="supplyName" placeholder="Item Name" required>
+    <input type="number" id="supplyQuantity" placeholder="Quantity" required>
+    <button type="submit">Add Item</button>
+  </form>
+
+  <h2>Inventory List</h2>
+
+  <!-- Search Bar -->
+  <div id="searchContainer">
+    <input type="text" id="searchBar" placeholder="Search by ID, Name, or Quantity...">
+  </div>
+
+  <table id="supplyTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Item Name</th>
+        <th>Quantity</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="supplyList"></tbody>
+  </table>
+
+  <script src="admin.js"></script>
+</body>
+</html>
+

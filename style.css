@@ -1,0 +1,153 @@
+/* General Page Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f0f4ff, #e9f0fb);
+  color: #333;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  padding: 25px;
+  background: linear-gradient(90deg, #4a90e2, #357ABD);
+  color: white;
+  margin: 0;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+h2 {
+  margin-top: 30px;
+  text-align: center;
+  color: #4a90e2;
+  font-weight: 600;
+}
+
+/* Form Styling */
+form {
+  background: #ffffff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 650px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: calc(32% - 5px);
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+form input:focus {
+  border: 1px solid #4a90e2;
+  outline: none;
+  box-shadow: 0 0 5px rgba(74,144,226,0.5);
+}
+
+form button {
+  padding: 10px 20px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s, transform 0.1s;
+}
+
+form button:hover {
+  background: #357ABD;
+  transform: scale(1.03);
+}
+
+/* Search Bar */
+#searchContainer {
+  text-align: center;
+  margin: 20px auto;
+}
+
+#searchBar {
+  width: 50%;
+  padding: 12px 15px;
+  border-radius: 25px;
+  border: 1px solid #bbb;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+#searchBar:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 8px rgba(74,144,226,0.4);
+  outline: none;
+}
+
+/* Inventory Table */
+#supplyTable {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#supplyTable th, 
+#supplyTable td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+#supplyTable th {
+  background: #4a90e2;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+#supplyTable tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+#supplyTable tr:hover {
+  background: #eef5ff;
+  transition: background 0.2s;
+}
+
+#supplyTable button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 6px;
+  font-size: 14px;
+}
+
+#supplyTable .editBtn {
+  background: #f39c12;
+  color: white;
+}
+
+#supplyTable .editBtn:hover {
+  background: #d68910;
+}
+
+#supplyTable .deleteBtn {
+  background: #e74c3c;
+  color: white;
+}
+
+#supplyTable .deleteBtn:hover {
+  background: #c0392b;
+}
